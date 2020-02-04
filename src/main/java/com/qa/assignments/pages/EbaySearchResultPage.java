@@ -9,7 +9,7 @@ import com.qa.assignments.base.TestBase;
 
 public class EbaySearchResultPage extends TestBase {
 
-	List<WebElement> productTitles; 
+	List<WebElement> productTitles;
 
 	// Elements
 	private By totalResults = By.xpath("//h1//span[1]");
@@ -26,7 +26,7 @@ public class EbaySearchResultPage extends TestBase {
 	public String getSpecificProduct(int index) {
 
 		productTitles = driver.findElements(productTitle);
-
+		
 		return productTitles.get(index-1).getText();
 
 	}

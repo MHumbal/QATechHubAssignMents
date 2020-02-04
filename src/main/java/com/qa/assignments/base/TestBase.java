@@ -47,10 +47,10 @@ public class TestBase {
 			driver = new FirefoxDriver();
 		}
 
-		action = new Actions(driver);
-
 		// Implicit Wait
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		action = new Actions(driver);
 
 		// Maximizing browser window
 		driver.manage().window().maximize();
