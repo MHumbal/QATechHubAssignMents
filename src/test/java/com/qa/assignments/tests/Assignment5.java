@@ -22,9 +22,9 @@ public class Assignment5 extends TestBase {
 	@Test
 	public void verifyLogin() throws InterruptedException {
 		
-		String accountUserName = "8153974171";
+		String accountUserName = "YourUserName";
 		
-		Assert.assertEquals(snapdealHomePage.validateLogin("8153974171", "Master@2002"), accountUserName);
+		Assert.assertEquals(snapdealHomePage.validateLogin("your email or mobile number", "your password"), accountUserName);
 		
 	}
 	
